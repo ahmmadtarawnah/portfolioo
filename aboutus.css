@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "jost", sans-serif;
+  background-color: #1d242e;
+}
+
+.container {
+  padding: 22px 10px;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 4px 5px #00000059;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.links-container li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ff0084;
+  transition: 0.3s ease-in;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #ff0084;
+}
+
+.sample {
+  color: #ff0084;
+}
+
+.hire-button {
+  width: 170px;
+  border: none;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #ff0084;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.hire-link-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1em;
+}
+
+.hire-button:hover {
+  background: linear-gradient(#ff0084, rgb(197, 166, 191));
+}
+
+.about {
+  width: 100%;
+  padding: 78px 0px;
+  background-color: #1d242e;
+
+}
+
+.image-container {
+  height: auto;
+  width: 1200px;
+}
+
+.about img {
+  height: auto;
+  width: 420px;
+}
+
+.user-image {
+  width: 500px;
+  height: 100%;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-right: 2cm;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  color: #ff0084;
+  font-size: 40px;
+
+}
+
+h4 {
+  color: #fff;
+
+}
+
+p {
+  color: #fff;
+  text-align: justify;
+}
+
+.social-icon:hover {
+  color: #ff0084;
+  border-color: #ff0084;
+}
+
+.mynumber {
+  color: #ff0084;
+}
+
+.me- {
+  color: #fff;
+}
+
+.text-centerp-3 {
+  color: #fff;
+}
+
+.text-white {
+  color: #ff0084;
+}
+
+.text-center {
+  background-color: #28313e;
+}
+
+.and {
+  color: #ff0084;
+}
+
+.front {
+  color: #ff0084;
+  font-size: larger;
+}
+
+.back {
+  color: #ff0084;
+  font-size: larger;
+
+}
+
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ff0084;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #f04cca;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .links-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user-image {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .hire-button {
+    width: 150px;
+    font-size: 13px;
+  }
+
+  .about img {
+    width: 300px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 1em;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .hire-button {
+    width: 120px;
+    padding: 8px;
+  }
+
+  .user-image {
+    width: 200px;
+  }
+}
